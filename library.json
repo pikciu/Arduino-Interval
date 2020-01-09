@@ -2,9 +2,13 @@
   "name": "Interval",
   "description": "Arduino Library for handling time intervals",
   "keywords": "interval, timer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "frameworks": "arduino",
   "platforms": "*",
+  "authors": {
+    "name": "pikciu",
+    "url": "https://github.com/pikciu"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/pikciu/Arduino-Interval.git"

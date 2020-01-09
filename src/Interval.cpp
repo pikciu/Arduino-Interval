@@ -3,6 +3,7 @@
 Interval::Interval(unsigned long interval) {
     this->interval = interval;
     this->time = millis();
+    this->counter = 0;
 }
 
 void Interval::reset() {
@@ -15,6 +16,7 @@ bool Interval::next() {
         return false;
     }
     time = now;
+    counter++;
     return true;
 }
 
@@ -25,7 +27,11 @@ void Interval::setHandler(HANDLER_SIGNATURE) {
 void Interval::loop() {
     if (handler) {
         if (next()) {
-            handler();
+            handler(getCount());
         }
     }
+}
+
+unsigned long Interval::getCount() {
+    return counter;
 }
