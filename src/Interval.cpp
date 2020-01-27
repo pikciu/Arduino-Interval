@@ -1,9 +1,15 @@
 #include "Interval.h"
 
-Interval::Interval(unsigned long interval) {
+Interval::Interval() {
+}
+
+Interval::Interval(unsigned long interval) : interval(interval) {
+    time = millis();
+    counter = 0;
+}
+
+void Interval::setInterval(unsigned long interval) {
     this->interval = interval;
-    this->time = millis();
-    this->counter = 0;
 }
 
 void Interval::reset() {

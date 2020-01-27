@@ -2,7 +2,7 @@
   "name": "Interval",
   "description": "Arduino Library for handling time intervals",
   "keywords": "interval, timer",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "frameworks": "arduino",
   "platforms": "*",
   "authors": {
